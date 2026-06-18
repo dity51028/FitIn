@@ -342,6 +342,286 @@ body{
     color: #fff;
 }
 
+.services{
+    background:#000;
+    padding:100px 0;
+    position:relative;
+    overflow:hidden;
+}
+
+/* Red vertical stripes background */
+
+
+.service-container{
+    display:flex;
+    justify-content:space-between;
+    gap:80px;
+    position:relative;
+    z-index:1;
+}
+
+/* Left Side */
+.left{
+    width:20%;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#fff;
+}
+
+.circle{
+    width:12px;
+    height:12px;
+    border:3px solid #d8ff00;
+    border-radius:50%;
+}
+
+.left h5{
+    margin:0;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.slashes{
+    color:#d8ff00;
+    font-size:22px;
+    font-weight:bold;
+}
+
+/* Right Side */
+.right{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:30px 0;
+    border-bottom:1px solid rgba(255,255,255,0.15);
+    cursor:pointer;
+    transition:.4s;
+}
+
+.service-item h2{
+    margin:0;
+    color:#666;
+    font-size:3rem;
+    font-weight:800;
+    text-transform:uppercase;
+    transition:.4s;
+}
+
+.service-item i{
+    color:#666;
+    font-size:2rem;
+    transition:.4s;
+}
+
+.service-item.active h2,
+.service-item.active i{
+    color:#fff;
+}
+
+.service-item:hover h2,
+.service-item:hover i{
+    color:#fff;
+    transform:translateX(8px);
+}
+
+.about-our-gym {
+    background: #000;
+    overflow: hidden;
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    border: 3px solid #d6ff00;
+    border-radius: 50%;
+}
+
+.slashes {
+    color: #d6ff00;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.3;
+}
+
+.gym-img {
+    max-width: 100%;
+    display: block;
+}
+
+.custom-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(214, 255, 0, 0.25);
+    border-radius: 0;
+    color: #fff;
+    transition: .3s;
+}
+
+.custom-card:hover {
+    border-color: #d6ff00;
+    transform: translateY(-5px);
+}
+
+.custom-card .card-title {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.custom-card .card-text {
+    font-size: 13px;
+    color: #bdbdbd;
+    line-height: 1.7;
+}
+
+.custom-card i {
+    font-size: 18px;
+}
+
+body{
+    background:#000;
+    color:#fff;
+    font-family:sans-serif;
+}
+
+.section-header h6{
+    color:#d9ff00;
+    font-size:12px;
+    font-weight:700;
+}
+
+.section-header h3{
+    max-width:500px;
+    font-size:32px;
+}
+
+.coach-card{
+    border:1px solid #222;
+    background:#111;
+}
+
+.coach-card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+.coach-card h5{
+    padding:15px;
+}
+
+.price-card{
+    border:1px solid #222;
+    background:#111;
+    padding:30px;
+    height:100%;
+}
+
+.price-card.active{
+    background:#d9ff00;
+    color:#000;
+}
+
+.price-card ul{
+    list-style:none;
+    padding:0;
+    margin:25px 0;
+}
+
+.price-card li{
+    margin-bottom:12px;
+}
+
+.locations h6{
+    color:#d9ff00;
+}
+
+.locations span{
+    color:#d9ff00;
+}
+
+.world-map{
+    margin-top:50px;
+}
+
+.transformation{
+    background:url('./assets/images/transformation.jpg');
+    background-size:cover;
+    background-position:center;
+    min-height:500px;
+    display:flex;
+    align-items:end;
+}
+
+.overlay{
+    width:100%;
+    padding:100px 0;
+    background:linear-gradient(
+        to top,
+        rgba(217,255,0,.8),
+        rgba(0,0,0,.3)
+    );
+}
+
+.transformation h1{
+    color:#d9ff00;
+    font-weight:900;
+}
+
+.footer{
+    border-top:1px solid #222;
+}
+
+.footer-links{
+    list-style:none;
+    padding:0;
+}
+
+.footer-links li{
+    margin-bottom:10px;
+}
+
+.newsletter{
+    display:flex;
+    background:#111;
+    border-radius:30px;
+    overflow:hidden;
+}
+
+.newsletter input{
+    flex:1;
+    border:none;
+    background:transparent;
+    color:#fff;
+    padding:15px;
+}
+
+.newsletter button{
+    border:none;
+    background:#d9ff00;
+    padding:15px 30px;
+}
+
+@media(max-width:991px) {
+    .heading {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+}
+
+
+
 /* Responsive */
 
 
@@ -406,6 +686,14 @@ body{
 
     .about-title {
         justify-content: center;
+    }
+    .service-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .services .left{
+        display: flex;
+        align-items: center;
     }
 }
 
